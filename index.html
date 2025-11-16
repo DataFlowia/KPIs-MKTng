@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KPIs: Estratega Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'cyan': { 'light': '#e0f7fa', 'DEFAULT': '#00bcd4', 'dark': '#00838f' },
+              'verde': { 'light': '#e8f5e9', 'DEFAULT': '#4caf50', 'dark': '#2e7d32' },
+              'azul': { 'light': '#e3f2fd', 'DEFAULT': '#2196f3', 'dark': B'#1565c0' },
+              'morado': { 'light': '#f3e5f5', 'DEFAULT': '#9c27b0', 'dark': '#6a1b9a' },
+              'rosa': { 'light': '#fce4ec', 'DEFAULT': '#e91e63', 'dark': '#c2185b' },
+              'naranja': { 'light': '#fff3e0', 'DEFAULT': '#ff9800', 'dark': '#ef6c00' },
+              'amarillo': { 'light': '#fffde7', 'DEFAULT': '#ffeb3b', 'dark': '#f9a825' },
+              'rojo': { 'light': '#ffebee', 'DEFAULT': '#f44336', 'dark': '#c62828' },
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-900 text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
