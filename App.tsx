@@ -7,6 +7,9 @@ import Dashboard from './components/Dashboard';
 import KpiDetailModal from './components/KpiDetailModal';
 import CalculatorModule from './components/CalculatorModule';
 import Footer from './components/Footer';
+import ResponsiveLayout from './components/mobile-optimization/ResponsiveLayout';
+import KpiCard3D from './components/mobile-optimization/KpiCard3D';
+import './components/mobile-optimization/MobileOptimization.css';
 
 type View = 'dashboard' | 'calculator';
 
@@ -25,6 +28,7 @@ const App: React.FC = () => {
   }
 
   return (
+        <ResponsiveLayout>
     <div className="flex h-screen bg-slate-900 font-sans">
       <Sidebar
         categories={kpisData.categorias}
@@ -57,6 +61,7 @@ const App: React.FC = () => {
         />
       )}
     </div>
+                </ResponsiveLayout>
   );
 };
 
